@@ -4,10 +4,10 @@ import { MailOutline } from "react-ionicons";
 import { CalendarOutline } from "react-ionicons";
 import { PhonePortraitOutline } from "react-ionicons";
 import { LocationOutline } from "react-ionicons";
-import { LogoFacebook } from "react-ionicons";
 import { LogoTwitter } from "react-ionicons";
 import { LogoInstagram } from "react-ionicons";
 import { ChevronDownOutline } from "react-ionicons";
+import { LogoLinkedin } from 'react-ionicons'
 
 export default function Sidebar() {
   const elementToggleFunc = (element: HTMLElement) => {
@@ -124,6 +124,40 @@ export default function Sidebar() {
           </li>
         </ul>
 
+              <div className="separator"></div>
+    
+              <ul className="social-list">
+                <li className="social-item">
+                  <a href="https://www.linkedin.com/in/vighnesh-sadagopal/" className="social-link">
+                  <LogoLinkedin
+                    color={'#d6d6d6'} 
+                    title={'linkedin icon'}
+                    height="20px"
+                    width="20px"
+                  />
+                    </a>
+                </li>
+                <li className="social-item">
+                  <a href="https://x.com/_vighnesh_vs" className="social-link">
+                  <LogoTwitter
+                    color={'#d6d6d6'} 
+                    title={'x'}
+                    height="20px"
+                    width="20px"
+                  />
+                    </a>
+                </li>
+                <li className="social-item">
+                  <a href="https://www.instagram.com/vighnesh__.p/" className="social-link">
+                  <LogoInstagram
+                    color={'#d6d6d6'} 
+                    title={'instagram icon'}
+                    height="20px"
+                    width="20px"
+                  />
+                    </a>
+                </li>
+              </ul>
       </div>
     </aside>
   );
