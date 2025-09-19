@@ -8,6 +8,7 @@ import { LogoTwitter } from "react-ionicons";
 import { LogoInstagram } from "react-ionicons";
 import { ChevronDownOutline } from "react-ionicons";
 import { LogoLinkedin } from 'react-ionicons'
+import { ChevronDown } from 'lucide-react';
 
 export default function Sidebar() {
   const elementToggleFunc = (element: HTMLElement) => {
@@ -46,12 +47,7 @@ export default function Sidebar() {
 
         <button className="info_more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
-          <ChevronDownOutline
-            color={"#ffda6b"}
-            title={"cheveronDown"}
-            height="20px"
-            width="20px"
-          />
+          <ChevronDown color="#ffda6b" />
         </button>
       </div>
 
